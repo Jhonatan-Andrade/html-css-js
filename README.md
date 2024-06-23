@@ -27,9 +27,7 @@ type Recipes = [{
 <p>🚀 http://localhost:3333/category</p>
 
 ```typescript
-type Category = [{ 
-    "title": string
-}]
+type Category = [string]
 ``` 
 <br/>
 

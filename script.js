@@ -22,8 +22,8 @@ function gitApiListCategory() {
         
             const option = document.createElement("option")
             option.className ="optionCategory"
-            option.value = i.value      
-            option.innerHTML = i.value
+            option.value = i      
+            option.innerHTML = i
             option.onclick ="onselectOption()"
         
             select.appendChild(option)
