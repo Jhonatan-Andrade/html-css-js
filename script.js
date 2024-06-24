@@ -1,10 +1,55 @@
 
 
-let dataList
+
+
+const baseurl = "http://localhost:3333"
+
+
+// verificando se a API esta online
+
+fetch(`${baseurl}/api`)
+.then((res)=>{ 
+    if (res.ok) {
+        gitApiListRecipes(`${baseurl}/recipes`)     
+        gitApiListCategory(`${baseurl}/category`)  
+    }
+})
+.catch(()=>{
+    gitApiListRecipes("./data/recipes.json")     
+    gitApiListCategory("./data/category.json")
+    
+    warningFakwApi()
+})
+
+
+//aviso de uso de dados fausos
+function warningFakwApi() {
+    let body = document.getElementById("body")
+        
+    let div = document.createElement("div")
+    div.style = "display:flex;  flex-direction: column; justify-content: center; align-items: center; border-radius: 10px;  color:#fff; position: fixed;top:200px; right:20px; padding:4px;  background-color: #e96767; width:40px;"
+    
+    let p1 = document.createElement("p")
+    p1.style = " width:12px; padding: 10px 0; word-wrap: break-word;font-family:Archivo Black;font-weight: 400;font-style: normal; white-space: pre-wrap;"
+    p1.innerText = "DADOS"
+
+
+    let p2 = document.createElement("p")    
+    p2.style = " width:12px; padding:10px 0; word-wrap: break-word;font-family:Archivo Black;font-weight: 400;font-style: normal;white-space: pre-wrap;"
+    p2.innerText = "FALSOS"
+    
+   
+
+
+    body.appendChild(div)
+    div.appendChild(p1)
+    div.appendChild(p2)
+}
 
 // --fetch--------------------------------------------------------------------------------------------------------------------
-function gitApiListRecipes() {
-    fetch("http://localhost:3333/recipes")
+let dataList
+function gitApiListRecipes(url) {
+    fetch(url)
     .then((response) => response.json())
     .then((data) => {
         dataList = data; 
@@ -13,8 +58,8 @@ function gitApiListRecipes() {
         })
     })
 }
-function gitApiListCategory() {
-    fetch("http://localhost:3333/category")
+function gitApiListCategory(url) {
+    fetch(url)
     .then((response) => response.json())
     .then((data) => {
         data.map((i)=>{
@@ -86,5 +131,3 @@ function  onselectOption() {
 }
 
 // --function--start----------------------------------------------------------------------------------------------------------
-gitApiListRecipes()     
-gitApiListCategory()
