@@ -29,7 +29,7 @@ header{
     align-items: center;
     width: 100%;
     height: 80px;
-    background-color: #2ecc71;
+    background-color: #a5147d;
     color: white;
     padding: 0 80px 0 50px;
     font-size: 12pt;
@@ -51,7 +51,7 @@ section{
     margin-top: 10px;
     font-family: "Archivo", sans-serif;
     font-size: 12pt;
-    background-color: #239b55;
+    background-color: #680d4e;
     color: #fff;
     padding: 4px;
     border-radius: 9px; 
@@ -62,100 +62,111 @@ section{
 }
 .listRecipes{
     width: 100%;
-    display: grid;
-    grid-template-columns: 300px 300px 300px ;
-    padding-top: 40px;
-    row-gap: 80px;
-    column-gap: 80px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 li{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 30px;
-    width: 300px;
+    border-radius: 15px;
+    width: 50%;
+    
+    margin: 20px;
     
 }
-.itenRecipesImg{
-    width: 100%;    
-    height: 250px;
-    border-radius:30px 30px 0 0;
+.itenRecipes{
+    display: flex;
+    
+}
+ .itenRecipesImg{
+    width: 50%;    
+    height: 100%;
+    border-radius: 15px 0 0 15px; 
+    margin-right: 20px;  
+}
+.data{
+    width: 50%;   
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-between;
 }
 .itenRecipesTitle{
-    width: 100%;
-    padding: 20px 10px;
-    font-size: 16pt;
-    text-align: center;
+    font-size: 18pt;
+    color:#a5147d
+} 
+.stars{
+    font-size: 18pt;
+    color: #FFD43B;
 }
-
-
-
-
-
-
-
-/* ---media-------------------------------------------------------------------------------------------------- */
-
-@media screen and (min-width:1280px  )  {
-    
-    section{
-        width: 1200px;
-    }
-}
+/* ---media-------------------------------------*/
 @media screen and (max-width:1280px  )  {
     
-    section{
-        width: 900px;
+    .listRecipes{}
+
+    li{
+        width: 70%;
     }
-    .listRecipes{
-        grid-template-columns: 250px 250px 250px ;
-    }
+
+    .itenRecipes{}
+
+    .itenRecipesImg{}
+
+    .itenRecipesTitle{} 
+
 }
 @media screen and (max-width:920px  )  {
     
-    section{
-        width: 700px;
-    }       
-    .listRecipes{
-        grid-template-columns: 250px 250px ;
-        
-    justify-content: center;
-    }
-}
-@media screen and (max-width:700px )  {
-    
-    section{
-        width: 100%;
-    } 
+    .listRecipes{}
 
-    .listRecipes{
-        grid-template-columns: 250px 250px ;
-    }
-    .itenRecipes{
-        width: 400px;
-    }
-}
-@media screen and (max-width:600px  )  {
-    .headerTitle{
-        font-size: 18pt;
-    }
-    section{
-        width: 100%;
-        padding:150px 40px;
-    }   
-
-    .listRecipes{
-        grid-template-columns: 100% ;
-    }
-    .itenRecipes{
+    li{
         width: 80%;
     }
-}  
+
+    .itenRecipes{}
+
+    .itenRecipesImg{}
+    
+    .itenRecipesTitle{} 
+}
+
+@media screen and (max-width:700px )  {
+    
+    .listRecipes{}
+
+    li{ width: 90%;}
+
+    .itenRecipes{}
+
+    .itenRecipesImg{}
+    
+    .itenRecipesTitle{} 
+}
+
+@media screen and (max-width:500px  )  {
+    
+    .listRecipes{}
+
+    li{}
+
+    .itenRecipes{}
+
+    .itenRecipesImg{}
+    
+    .itenRecipesTitle{} 
+}
+
 @media screen and (max-width:400px  )  {
-    .headerTitle{
-        font-size: 16pt;
-    } 
-    .itenRecipes{
-        width: 80%;         
-    }
-}  
+    
+    .listRecipes{}
+
+    li{}
+
+    .itenRecipes{}
+
+    .itenRecipesImg{}
+    
+    .itenRecipesTitle{} 
+}
+
+

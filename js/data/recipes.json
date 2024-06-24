@@ -24,7 +24,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Bolo",
-      "stars":"5"
+      "stars":"4"
   },
   {
       "id":2,
@@ -78,7 +78,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Cuzido",
-      "stars":"5"
+      "stars":"3"
   },
   {
       "id":4,
@@ -105,7 +105,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Sopa",
-      "stars":"5"
+      "stars":"2"
   },
   {
       "id":5,
@@ -132,7 +132,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Bolo",
-      "stars":"5"
+      "stars":"4"
   },
   {
       "id":6,
@@ -186,7 +186,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Cuzido",
-      "stars":"5"
+      "stars":"1"
   },
   {
       "id":8,
@@ -213,7 +213,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Sopa",
-      "stars":"5"
+      "stars":"2"
   },{
       "id":9,
       "title":"Nega Maluca ",
@@ -265,7 +265,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Salgados",
-      "stars":"5"
+      "stars":"4"
   },{
       "id":11,
       "title":"Cuzido Peixe",
@@ -291,7 +291,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Cuzido",
-      "stars":"5"
+      "stars":"2"
   },{
       "id":12,
       "title":"Sopa de macarrã",
@@ -317,7 +317,7 @@
           "Com o bolo pronto, despeje 1 pode de Danette Sobremesa Chocolate Ao Leite em cada bolinho. Decore com o chocolate granulado."
       ],
       "category":"Sopa",
-      "stars":"5"
+      "stars":"3"
   }
 
 ]
