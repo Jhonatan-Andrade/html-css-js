@@ -2,9 +2,9 @@
 import {baseURL,gitApiListRecipes,gitApiListCategory,fakeApiListRecipes,fakeApiListCategory} from "./api.js";
 
 //Componentes
-import injectOptionCategory from "../page/components/OptionCategory.js";
-import injectListRecipes from "../page/components/ItenListRecipes.js";
-import WarningFakeApi from "../page/components/WarningDataFake.js";
+import injectOptionCategory from "../components/OptionCategory.js";
+import injectListRecipes from "../components/ItenListRecipes.js";
+import WarningFakeApi from "../components/WarningDataFake.js";
 
 // Função filter recebe 2 parametros (valor do seletor) ( lista de dados da api) 
 import filter from "./filter.js";

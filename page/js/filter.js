@@ -1,4 +1,4 @@
-import injectListRecipes from "../page/components/ItenListRecipes.js";
+import injectListRecipes from "../components/ItenListRecipes.js";
 
 export default function  onselectOption(selectValue,DATA) {
 

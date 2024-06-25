@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", Helvetica, sans-serif;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration-line: none;
+}
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #a5147d;
+    color: white;
+    padding: 0 50px;
+    font-size: 12pt;
+    justify-content: space-between;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.arrow i{
+
+    color: #fff;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.recipeSection{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.description{
+    width: 80%;
+    font-size: 18pt;
+    padding: 50px 0;
+}
+
+.ingredients{
+    width: 80%;
+    font-size: 18pt;
+    padding: 50px 0;
+
+    border-top:2px solid #a5147d ;
+    border-bottom:2px solid #a5147d ;
+}
+.preparation{
+    width: 80%;
+    font-size: 18pt;
+    padding: 50px 0;
+    
+}
+li{
+    margin:10px  50px ;
+    list-style:disc;
+}

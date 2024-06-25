@@ -1,6 +1,6 @@
 import Start from "./iconStars.js"
 
-export default function ItenRecipes(iten) {
+export default function ItenListRecipes(iten) {
     
         const ul = document.querySelector(".listRecipes")
 
@@ -10,8 +10,8 @@ export default function ItenRecipes(iten) {
 
         const a = document.createElement("a")
         a.className = "itenRecipes",
-        a.href = "",
-        a.target = "_blank"
+        a.href = `/page/recipe/index.html?id=${iten.id}`,
+        a.target = "_self"
 
         const img = document.createElement("img")
         img.className = "itenRecipesImg",

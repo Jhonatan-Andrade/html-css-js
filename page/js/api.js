@@ -21,3 +21,10 @@ export async function gitApiListCategory() {
         .then((data) => data)
     return data
 }
+export async function getApiRecipe(id) {
+    const data = fetch(baseURL+"/recipe/"+id)
+        .then((response) => response.json())
+        .then((data) => data)
+    return data
+    
+}
