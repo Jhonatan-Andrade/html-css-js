@@ -7,7 +7,10 @@ export const baseURL = "http://localhost:3333"
 
 export async function fakeApiListRecipes() {return recipes}
 export async function fakeApiListCategory() { return category}
-
+export async function fakeApiUnicRecipes(id) {
+    const data = recipes.find((i) => i.id == id)
+    return data
+}
 
 export async function gitApiListRecipes() {
     const data = fetch(baseURL+"/recipes")
