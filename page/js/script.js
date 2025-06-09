@@ -42,7 +42,7 @@ fetch(`${baseURL}/api`)
     DATA = ListRecipes
     
     //sinalizando que os dados são falsos
-    WarningFakeApi()
+    //WarningFakeApi()
 })
 
 //renderização das lista e das categorias 
